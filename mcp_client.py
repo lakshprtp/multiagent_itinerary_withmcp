@@ -18,7 +18,7 @@ client = MultiServerMCPClient(
 
         "aviationstack": {
             "transport": "stdio",
-            "command": "/Users/laksh/Desktop/aviation_mcp/.venv/bin/python",
+            "command": "/Users/laksh/Desktop/multiagent_itinerary_planner/aviation_mcp/.venv/bin/python",
             "args": [
                 "-m",
                 "aviationstack_mcp",
