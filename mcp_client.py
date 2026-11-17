@@ -8,24 +8,23 @@ from config import (
     TAVILY_API_KEY,
 )
 
+
+
 # Create MCP Client
 client = MultiServerMCPClient(
     {
         "tavily": {
             "transport": "streamable_http",
-            "url": f"https://mcp.tavily.com/mcp/?tavilyApiKey={TAVILY_API_KEY}"
+            "url": f"https://mcp.tavily.com/mcp/?tavilyApiKey={TAVILY_API_KEY}",
         },
-
         "aviationstack": {
-            "transport": "streamable_http",
-            "url":f"https://aviation-mcp-server-2.onrender.com"
-        }   ,
+            "transport": "sse",
+            "url": "https://aviation-mcp-server-2.onrender.com",
+        },
         "weather": {
-            "transport": "streamable_http",
-            "url":f"https://weather-mcp-w6gn.onrender.com"
-        }
-
-
+            "transport": "sse",
+            "url": "https://weather-mcp-w6gn.onrender.com",
+        },
     }
 )
 
