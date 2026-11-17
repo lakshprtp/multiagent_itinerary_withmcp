@@ -17,27 +17,12 @@ client = MultiServerMCPClient(
         },
 
         "aviationstack": {
-            "transport": "stdio",
-            "command": "/Users/laksh/Desktop/multiagent_itinerary_planner/aviation_mcp/.venv/bin/python",
-            "args": [
-                "-m",
-                "aviationstack_mcp",
-                "mcp",
-                "run"
-            ],
-            "env": {
-                "AVIATION_STACK_API_KEY": AVIATION_STACK_API_KEY
-            }
+            "transport": "streamable_http",
+            "url":f"https://aviation-mcp-server-2.onrender.com"
         }   ,
         "weather": {
-            "transport": "stdio",
-            "command": "/Users/laksh/Desktop/multiagent_itinerary_planner/weather_mcp/.venv/bin/python",
-            "args": [
-                "/Users/laksh/Desktop/multiagent_itinerary_planner/weather_mcp/mcp_server.py"
-            ],
-            "env": {
-                "OPENWEATHER_API_KEY": OPENWEATHER_API_KEY
-            }
+            "transport": "streamable_http",
+            "url":f"https://weather-mcp-w6gn.onrender.com"
         }
 
 
