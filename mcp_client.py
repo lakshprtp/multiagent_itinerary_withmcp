@@ -19,11 +19,11 @@ client = MultiServerMCPClient(
         },
         "aviationstack": {
             "transport": "sse",
-            "url": "https://aviation-mcp-server-2.onrender.com",
+            "url": "https://aviation-mcp-server-2.onrender.com/sse",
         },
         "weather": {
             "transport": "sse",
-            "url": "https://weather-mcp-w6gn.onrender.com",
+            "url": "https://weather-mcp-w6gn.onrender.com/sse",
         },
     }
 )
